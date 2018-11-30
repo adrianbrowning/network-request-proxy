@@ -1,0 +1,36 @@
+{
+  "name": "network-request-proxy",
+  "version": "1.0.0",
+  "description": "Designed so that all network requests could be forwarded through Charles Proxy (or similar proxy service)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianbrowning/network-request-proxy.git"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "proxy",
+    "http",
+    "https",
+    "agent"
+  ],
+  "node": ">= 4.5.0",
+  "author": "Adrian Elton-Browning <gingacodemonkey@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/adrianbrowning/network-request-proxy/issues"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.1.0",
+    "http-proxy-agent": "^2.1.0",
+    "https-proxy-agent": "^2.2.1"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0"
+  }
+}
