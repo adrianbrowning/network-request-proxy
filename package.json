@@ -1,6 +1,6 @@
 {
   "name": "network-request-proxy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Designed so that all network requests could be forwarded through Charles Proxy (or similar proxy service)",
   "main": "index.js",
   "scripts": {
