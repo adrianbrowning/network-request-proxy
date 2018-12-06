@@ -17,7 +17,7 @@ At the very top of your entry file
 
 ## Quick Examples
 ### Basic
-Rapidly assigning network calls to be run, but they will be limited to 1 request per second.
+Each of the following calls will be shown in Charles Proxy (or other proxy tool).
 
 ```js
 require("network-request-proxy")("http://127.0.0.1:8888");
@@ -37,6 +37,8 @@ axios.post("https://some/url", qs.stringify({ 'bar': 123 }))
      .then(res => console.log(res.data))
      .catch(e => console.error(e));
 ```
+
+![alt text](https://raw.githubusercontent.com/adrianbrowning/network-request-proxy/master/charles_proxy_example.png)
 
 ###Debugging
 If you want to log the requests that get sent out as well as proxy them you can set the cli enviroment variable `DEBUG=network-request-proxy` and this will log all requests that are sent.

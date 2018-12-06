@@ -3,7 +3,7 @@
  */
 "use strict";
 
-require("../index")("http://10.0.2.42:8888");
+require("../index")("http://127.0.0.1:8888");
 
 const axios = require("axios"),
       qs = require('qs');
