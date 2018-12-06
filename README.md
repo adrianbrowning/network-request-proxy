@@ -40,7 +40,7 @@ axios.post("https://some/url", qs.stringify({ 'bar': 123 }))
 
 ![alt text](https://raw.githubusercontent.com/adrianbrowning/network-request-proxy/master/charles_proxy_example.png)
 
-###Debugging
+### Debugging
 If you want to log the requests that get sent out as well as proxy them you can set the cli enviroment variable `DEBUG=network-request-proxy` and this will log all requests that are sent.
 
 
