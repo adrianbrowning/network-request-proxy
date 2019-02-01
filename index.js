@@ -20,7 +20,7 @@ function override(protocol, agent) {
       const [ request, ...args ] = arguments;
       if (!request.agent) {
         request.agent = new agent(_proxy);
-        debug("Proxying request to %s %s",request.method, request.protocol + "//" + request.hostname + (request.port ? request.port : "") + request.path);
+        debug("Proxying request to %s %s",request.method, (request.protocol ? request.protocol + "//" : "") + (request.hostname||request.host) + (request.port ? ":" + request.port : "") + request.path);
       }
       return protocol[ property + "_old" ].apply(this, [ request, ...args ]);
     }.bind(protocol);
